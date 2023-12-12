@@ -7,3 +7,5 @@ echo "Second Vegitable is: ${VEGITABLES[1]}"
 echo "Third Vegitable is: ${VEGITABLES[2]}"
 
 echo "All Vegitables are: ${VEGITABLES[@]}"
+
+#
