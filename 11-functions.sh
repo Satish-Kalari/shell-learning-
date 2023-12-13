@@ -3,11 +3,11 @@
 ID=$(id -u)
 
 VALIDATE(){
-    if [ $? -eq 0 ] #$? outputs scuess or failure, scuess=0, failure=other than zero value
+    if [ $1 -eq 0 ] #$? outputs scuess or failure, scuess=0, failure=other than zero value
     then
-        echo "!!!!!!!!!!!!Sucuessfully installed!!!!!!!!!!"
+        echo "$2 !!!!!!!!!!!!Sucuessfully installed!!!!!!!!!!"
     else
-        echo "---------Error: Failed to install----------"
+        echo "$2 ---------Error: Failed to install----------"
     fi
 
 }
