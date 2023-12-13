@@ -17,3 +17,4 @@ then
     echo "Sucuessfully installed"
 else
     echo "Error: Failed to install"
+fi
