@@ -3,7 +3,7 @@
 ID=$(id -u)
 
 VALIDATE(){
-    if [ $? -eq 0 ] #$? outputs scuess or failure, scuess=0, failure=other than zero value
+    if [ $? -eq 0 ] #$? exit stsus for previous command, scuess=0, failure=other than zero value
     then
         echo "!!!!!!!!!!!!Sucuessfully installed!!!!!!!!!!"
     else
