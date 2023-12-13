@@ -12,7 +12,7 @@ fi # fi indicates end of if condition
 
 yum install mysql -y
 
-if [ $? -eq 0 ]
+if [ $? -eq 0 ] #$? outputs scuess or failure, scuess=0, failure=other than zero value
 then
     echo "Sucuessfully installed"
 else
