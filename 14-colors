@@ -28,7 +28,7 @@ else
     exit 1 # exit command exits the script when scrit run fails
 fi
 
-yum install mysql -y &>> $LOGFILE
+yum install mysql -y &>> $LOGFILE #&>> commend appends logs to same file
 VALIDATE $? "MySql installed"
 yum install git -y &>> $LOGFILE
 VALIDATE $? "Git installed"
