@@ -3,7 +3,7 @@
 ID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
 
-LOGFILE="/tmp/$0-$TIME" #$0 pulles scrit file name
+LOGFILE="/tmp/$0-$TIMESTAMP" #$0 pulles scrit file name
 
 VALIDATE(){
     if [ $1 -eq 0 ] #$? outputs scuess or failure, scuess=0, failure=other than zero value
