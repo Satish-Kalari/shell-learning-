@@ -20,7 +20,7 @@ else
     exit 1
 fi
 
-yum instal mysql -y
+yum install mysql -y
 VALIDATE
 yum install git -y
 VALIDATE
