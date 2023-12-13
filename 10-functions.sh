@@ -12,7 +12,7 @@ VALIDATE(){
 
 }
 
-if [ $ID -eq 0]
+if [ $ID -eq 0 ]
 then
     echo "Proceeding with installtion"
 else 
