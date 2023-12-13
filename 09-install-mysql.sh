@@ -10,7 +10,7 @@ else
     echo "You are root user"
 fi # fi indicates end of if condition
 
-yum install mysqul -y
+yum install mysql -y
 
 if [ $? -eq 0 ]
 then
