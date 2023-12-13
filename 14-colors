@@ -25,7 +25,7 @@ then
     echo "Proceeding with installtion"
 else 
     echo "Run script as ROOT USER"
-    exit 1
+    exit 1 # exit command exits the script when scrit run fails
 fi
 
 yum install mysql -y &>> $LOGFILE
