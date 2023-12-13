@@ -17,6 +17,7 @@ then
     echo "Proceeding with installtion"
 else 
     echo "Run script as ROOT USER"
+    exit 1
 fi
 
 yum instal mysql -y
