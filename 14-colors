@@ -3,10 +3,10 @@
 ID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
 
-R="\3[31m" #colore coe for red
-G="\3[32m" #colore coe for green
-Y="\3[33m" #colore coe for yellow
-N="\3[0m" #colore coe for normal
+R="\e[31m" #colore coe for red
+G="\e[32m" #colore coe for green
+Y="\e[33m" #colore coe for yellow
+N="\e[0m" #colore coe for normal
 
 LOGFILE="/tmp/$0-$TIMESTAMP" #$0 pulles scrit file name
 
