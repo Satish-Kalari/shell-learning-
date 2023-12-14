@@ -43,4 +43,5 @@ do
         VALIDATE $? "Intallation of $package" #validaing if package is installed or not
     else
         echo -e "$package is alreday isntalled..  "
+    fi
 done
