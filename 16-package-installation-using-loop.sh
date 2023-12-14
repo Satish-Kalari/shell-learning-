@@ -14,11 +14,12 @@ echo "script started excicuting at $TIMESTAMP" &>> $LOGFILE # &=both sucess and 
 
 VALIDATE() {
 
-    if [ $1 -ne 0 ] #l$1 takes valuve from $? VALIDATE command from line 42  
+    if [ $1 -ne 0 ] #l$1 takes valuve from $? VALIDATE command from line 43  
     then
         echo -e "$2 ... $R FAILLED $N" 
     else 
         echo -e "$2 ...$G SUCESSFUL $N "
+    fi
 }
 
 if [ $ID -ne 0 ] #checking if user as root acess or permisions to intall the packages 
