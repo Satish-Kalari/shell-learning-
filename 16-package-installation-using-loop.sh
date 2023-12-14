@@ -12,7 +12,7 @@ LOGFILE="/tmp/$0-$TIMESTAMP.log" #$0 is to get script file name
 
 echo "script started excicuting at $TIMESTAMP" &>> $LOGFILE # &=both sucess and failure >>appending 
 
-VALIDATE() {
+VALIDATE(){
 
     if [ $1 -ne 0 ] #l$1 takes valuve from $? VALIDATE command from line 43  
     then
@@ -40,8 +40,8 @@ do
     if [ $? -ne 0 ] #if not install package
     then
         yum install $package -y #intalling package
-        VALIDATE $? "Intallation of $package" #validaing if package is installed or not
+        VALIDATE $? "Installation of $package" #validaing if package is installed or not
     else
-        echo -e "$package is alreday isntalled..  "
+        echo -e "$package is alreday isntalled..  $Y SKIPPING $N"
     fi
 done
