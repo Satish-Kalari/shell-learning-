@@ -32,11 +32,11 @@ do
      max_size=$OPTARG
      ;;
    \? )
-     echo "Invalid option: $OPTARG" 1>&2
+     echo -e "$R Invalid option:$N $OPTARG" 1>&2
      exit 1
      ;;
    : )
-     echo "Invalid option: $OPTARG requires an argument" 1>&2
+     echo -e "$R Invalid option:$N $OPTARG requires an argument" 1>&2
      exit 1
      ;;
  esac
