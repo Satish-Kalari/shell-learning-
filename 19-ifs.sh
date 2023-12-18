@@ -14,7 +14,7 @@ fi
 
 while IFS=":" read -r username password user_id group_id user_fullname home_dir shell_path
 do
-    echo "User Name: $username"
+    echo "User Name:$G $username $N"
     echo "User Name: $user_id"
     echo "User Name: $user_fullname"
 
