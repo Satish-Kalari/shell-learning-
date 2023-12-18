@@ -15,7 +15,7 @@ fi
 while IFS=":" read -r username password user_id group_id user_fullname home_dir shell_path
 do
     echo -e "User Name:$G $username $N"
-    echo "User ID: $user_id"
-    echo "User FullName: $user_fullname"
+    echo -e "$R User ID: $N $user_id"
+    echo -e "User FullName:$Y $user_fullname $N"
 
 done < $FILE
