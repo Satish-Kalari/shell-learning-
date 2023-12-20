@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NAME=""
-GREETING=""
+GREETING="Good Morning"
 
 R="\e[31m"
 G="\e[32m"
