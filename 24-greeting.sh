@@ -22,7 +22,7 @@ while getopts ":n:w:h" opt; do #h for help
         n) NAME="$OPTARG";;
         w) GREETING="$OPTARG";;
         \?) echo "invalid options: -"$OPTARG"" >&2 USAGE; exit;;
-        :) USAGE; exit;;
+        :) USAGE; exit;; #this is for empty arrguments
         h) USAGE; exit;;
     esac
 done
