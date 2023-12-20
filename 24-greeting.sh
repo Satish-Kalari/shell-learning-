@@ -17,7 +17,7 @@ USAGE(){
 
 }
 
-while getopts ":n:w:h" opt; do
+while getopts ":n:w:h" opt; do #h for help
     case $opt in
         n) NAME="$OPTARG";;
         w) GREETING="$OPTARG";;
@@ -30,7 +30,7 @@ done
 #if [ -z "$NAME" ] && [ -z "$GREETING" ]; then
 if [ -z "$NAME" ]; then #now greeting is optional
     #echo -e "$R ERROR:$N both -n and -w are mandatory options"
-    echo -e "$R ERROR:$N -n is mandatory"
+    echo -e "$R10$Y90 ERROR:$N -n is mandatory"
     USAGE
     exit 1
 fi
