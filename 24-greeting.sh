@@ -30,7 +30,7 @@ done
 #if [ -z "$NAME" ] && [ -z "$GREETING" ]; then
 if [ -z "$NAME" ]; then #now greeting is optional
     #echo -e "$R ERROR:$N both -n and -w are mandatory options"
-    echo -e "$RERROR:$N -n is mandatory"
+    echo -e "$R ERROR:$N -n is mandatory"
     USAGE
     exit 1
 fi
